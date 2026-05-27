@@ -192,8 +192,7 @@ function NeuroBrainNexusApp() {
 
                
 
-                <motion.div
-                  className="avatar-reply"
+             
                   animate={{ scale: thinking ? [1, 1.03, 1] : 1 }}
                   transition={{ duration: 0.8, repeat: thinking ? Infinity : 0 }}
                 >
