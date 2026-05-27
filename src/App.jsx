@@ -193,17 +193,7 @@ function NeuroBrainNexusApp() {
                
 
              
-                  animate={{ scale: thinking ? [1, 1.03, 1] : 1 }}
-                  transition={{ duration: 0.8, repeat: thinking ? Infinity : 0 }}
-                >
-                  <div className="reply-head">
-                    <span>NeuroBrain sta rispondendo</span>
-                    <small>{voiceEnabled ? "VOCE ON" : "VOCE OFF"}</small>
-                  </div>
-                  <p>{avatarReply}</p>
-                 <div className="mt-4 flex items-end justify-center gap-[4px] h-10">
-  {Array.from({ length: 32 }).map((_, i) => (
-    <motion.div
+              
       key={i}
       className="w-[4px] rounded-full bg-gradient-to-t from-cyan-400 via-blue-400 to-fuchsia-400"
       animate={isSpeaking ? {
