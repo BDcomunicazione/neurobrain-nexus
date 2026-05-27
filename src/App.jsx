@@ -190,21 +190,7 @@ function NeuroBrainNexusApp() {
                 <div className="avatar-overlay" />
                 <div className="scan-line" />
 
-                <motion.div
-                  className="mouth"
-                  animate={isSpeaking ? {
-                    height: ["10px", "32px", "16px", "38px", "12px"],
-                    width: ["58px", "88px", "70px", "96px", "60px"],
-                    y: [0, 2, -1, 2, 0]
-                  } : { height: ["7px", "9px", "7px"], width: ["56px", "62px", "56px"] }}
-                  transition={{ duration: isSpeaking ? 0.18 : 2, repeat: Infinity }}
-                >
-                  <motion.div
-                    className="mouth-inner"
-                    animate={isSpeaking ? { scaleY: [0.4, 1.5, 0.7, 1.8, 0.4] } : { scaleY: [0.3, 0.45, 0.3] }}
-                    transition={{ duration: isSpeaking ? 0.18 : 2, repeat: Infinity }}
-                  />
-                </motion.div>
+               
 
                 <motion.div
                   className="avatar-reply"
