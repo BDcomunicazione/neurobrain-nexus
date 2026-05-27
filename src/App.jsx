@@ -13,7 +13,7 @@ function NeuroBrainNexusApp() {
   const [avatarReply, setAvatarReply] = useState("Sistema attivo. Sono pronto a rispondere.");
   const [voiceEnabled, setVoiceEnabled] = useState(true);
   const [isSpeaking, setIsSpeaking] = useState(false);
-  const [avatarImage, setAvatarImage] = useState("https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=90");
+  const [avatarImage, setAvatarImage] = useState("https://i.postimg.cc/g0j1wpLW/668f803e-7fcc-41b9-a8de-f344bb4d19bf.png");
   const [mode, setMode] = useState("general");
   const [uploadedFileName, setUploadedFileName] = useState("");
 
