@@ -188,7 +188,7 @@ function NeuroBrainNexusApp() {
                 />
 
                 <div className="avatar-overlay" />
-                <div className="scan-line" />
+               
 
                
 
