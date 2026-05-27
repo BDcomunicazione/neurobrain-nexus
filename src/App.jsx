@@ -219,7 +219,7 @@ function NeuroBrainNexusApp() {
       }}
     />
   ))}
-</div> transition={{ duration: 1.2, repeat: Infinity }} />
+
                   </div>
                 </motion.div>
               </div>
