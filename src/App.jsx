@@ -202,8 +202,24 @@ function NeuroBrainNexusApp() {
                     <small>{voiceEnabled ? "VOCE ON" : "VOCE OFF"}</small>
                   </div>
                   <p>{avatarReply}</p>
-                  <div className="voice-bar">
-                    <motion.div animate={{ width: thinking ? ["20%", "92%", "40%"] : ["45%", "70%", "45%"] }} transition={{ duration: 1.2, repeat: Infinity }} />
+                 <div className="mt-4 flex items-end justify-center gap-[4px] h-10">
+  {Array.from({ length: 32 }).map((_, i) => (
+    <motion.div
+      key={i}
+      className="w-[4px] rounded-full bg-gradient-to-t from-cyan-400 via-blue-400 to-fuchsia-400"
+      animate={isSpeaking ? {
+        height: [6, 18 + (i % 7) * 4, 10, 30, 8]
+      } : {
+        height: 6
+      }}
+      transition={{
+        duration: 0.45 + i * 0.015,
+        repeat: Infinity,
+        repeatType: "mirror"
+      }}
+    />
+  ))}
+</div> transition={{ duration: 1.2, repeat: Infinity }} />
                   </div>
                 </motion.div>
               </div>
